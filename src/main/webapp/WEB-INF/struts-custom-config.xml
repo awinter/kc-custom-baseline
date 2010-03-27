@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd" [
+	<!ENTITY protocol_forwards SYSTEM "struts_protocol_forwards.xml">
+	]>
+
+<struts-config>
+    <data-sources />
+
+    <form-beans >
+        <form-bean name="CustomForm" type="org.kuali.kra.custom.CustomForm" />
+    </form-beans>
+    <action-mappings>
+     <action path="/meetingManagement" name="MeetingForm" type="org.kuali.kra.custom.MeetingAction" attribute="KualiForm">
+            <forward name="basic" path="/WEB-INF/jsp/meeting/meeting.jsp" />
+            <forward name="meetingAction" path="/WEB-INF/jsp/meeting/meetingAction.jsp" />
+     </action>
+    </action-mappings>
+ </struts-config>
