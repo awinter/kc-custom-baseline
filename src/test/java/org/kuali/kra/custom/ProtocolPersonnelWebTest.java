@@ -239,11 +239,11 @@ public class ProtocolPersonnelWebTest extends ProtocolWebTestBase{
         return clickOn(getElementByName(page, DELETE_PERSON_BUTTON, false));
     }
 
-	@Override
-	protected String getRelativeWebappRoot() {
-		// TODO Auto-generated method stub
-		return "/target/kc_custom-1.0-SNAPSHOT";
-	}
+//	@Override
+//	protected String getRelativeWebappRoot() {
+//		// TODO Auto-generated method stub
+//		return "/target/kc_custom-1.0-SNAPSHOT";
+//	}
 
 }
 
